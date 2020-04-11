@@ -17,7 +17,7 @@ files:
               is Awesome!
           """.trimIndent())
     selected: true
-    status: Unchecked
+    status: Solved
   text: |-
     fun main() {
         println()

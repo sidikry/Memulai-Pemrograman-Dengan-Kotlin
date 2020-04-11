@@ -13,7 +13,7 @@ files:
     initialized_from_dependency: false
     possible_answer: println("Kotlin is Awesome!")
     selected: true
-    status: Unchecked
+    status: Solved
   text: |-
     fun main() {
         println()
