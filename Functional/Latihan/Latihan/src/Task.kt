@@ -1,9 +1,15 @@
 fun main() {
-    val text = "Kotlin"
-    val results = with(text){
-        "First letter is ${this[0]}" + " and ${this[this.length -1]}" + " for second letter"
-    }
+    val text = "Kotlin".firstAndLast()
 
-    // TODO 2
-    println(results)
+    val charOne = text["pertama"]
+    val charTwo = text["terakhir"]
+
+    println("First letter is $charOne and $charTwo for second letter")
+
 }
+
+fun String.firstAndLast() = mapOf(
+    "pertama" to this.first(),
+        "terakhir" to this.last()
+)
+

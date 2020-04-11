@@ -4,35 +4,35 @@ files:
   visible: true
   placeholders:
   - offset: 109
-    length: 28
+    length: 19
     placeholder_text: if (false) continue
     initial_state:
       length: 19
       offset: 109
     initialized_from_dependency: false
     possible_answer: if (number % 2 == 0) continue
-    selected: true
-    status: Unchecked
-  - offset: 165
-    length: 22
+    selected: false
+    status: Solved
+  - offset: 156
+    length: 19
     placeholder_text: if (false) continue
     initial_state:
       length: 19
       offset: 156
     initialized_from_dependency: false
     possible_answer: if (number > 15) break
-    selected: true
-    status: Unchecked
-  - offset: 215
-    length: 35
+    selected: false
+    status: Solved
+  - offset: 203
+    length: 13
     placeholder_text: val result =0
     initial_state:
       length: 13
       offset: 203
     initialized_from_dependency: false
     possible_answer: val result = number * (number + 10)
-    selected: true
-    status: Unchecked
+    selected: false
+    status: Solved
   text: |-
     fun main() {
         val listNumber = 1.rangeTo(100)

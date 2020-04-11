@@ -4,7 +4,7 @@ fun main() {
     val valueC = 99
 
     val resultA = calculateResult(valueA, valueB, valueC)
-    val resultB = calculateResult(valueA, valueB, 50)
+    val resultB = calculateResult(valueA, valueB, null)
 
     println("""
         ResultA is $resultA
@@ -12,8 +12,15 @@ fun main() {
     """.trimIndent())
 }
 
-fun calculateResult(valueA: Int, valueB: Int, valueC: Int): Int {
+fun calculateResult(valueA: Int, valueB: Int, valueC: Int?): Int {
     // TODO
-    val result = valueA + (valueB - valueC)
-    return result
+    val cNullOrNo = if (valueC == null){
+        50
+    }else{
+        valueC
+    }
+
+    val valueA = valueA
+    val valueB = valueB
+    return valueA + (valueB - (valueC?:50))
 }

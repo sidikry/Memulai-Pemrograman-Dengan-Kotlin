@@ -6,6 +6,6 @@ fun main(){
     val user = User("nrohmen", 17)
     val dataUser = DataUser("nrohmen", 17)
 
-    println(user)
+    println(user.name)
     println(dataUser)
 }

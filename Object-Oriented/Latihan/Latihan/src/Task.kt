@@ -1,34 +1,33 @@
 // TODO 1
-class Cat(private val name: String) {
+class Cat{
+    var name: String = "Gippy"
     var sleep: Boolean = false
-
-    fun toSleep(sleep: Boolean) = if(sleep == true){
-        println("$name, let's play!")
-    }
-    else{
-        println("$name, sleep!")
-    }
-
-    fun getSlepp(){
-
+    get() {
         println("Fungsi getter dipanggil")
+        return field
     }
-
-    fun setSleep(){
+    set(value) {
         println("Fungsi setter dipanggil")
+        field = value
     }
 
+    fun toSleep() {
+        val gippy = Cat()
+        println("${gippy.name}," + if (sleep) {
+            " sleep!"
+        }else{
+            " let's play!"
+        })
+    }
 
 }
 
 fun main() {
-
     // TODO 2
-    val gippy = Cat("Gippy")
+    val gippy = Cat()
+    gippy.toSleep()
+    gippy.sleep = true
+    gippy.toSleep()
 
-    gippy.getSlepp()
-    gippy.toSleep(true)
-    gippy.setSleep()
-    gippy.getSlepp()
-    gippy.toSleep(false)
+
 }
